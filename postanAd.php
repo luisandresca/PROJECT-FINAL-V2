@@ -144,17 +144,36 @@ AND categories.categoryID=1;
                     
                     
                       <!-- COMBOBOX ALL CATEGORIES  !-->
-                      
-                      <select name="comboCategories" onchange ='<?php echo "window.location.href='#postanAd.php?comboCategories='"?>'>
-  					  <?php
+                      <form action="#" method='get'>
+                      	<?php if(!isset($_GET["comboCategories"]))
+				{
+				  echo"<select name='comboCategories'>";
+  					  
 						//$counter=0;
   						foreach ($resultLang as $oneRec)
   						{
  							echo"<option value=".$oneRec["categoryID"].">".$oneRec["categoryName"]."</option>";  			
   						}
-  					  ?>
-  					  </select>
-                      
+  					  
+  					  echo "</select>";
+			  	 }
+			      else
+			      {
+				// Create the obj subcategory $resultSub      
+			      	echo"<select name='comboCategories'>";
+  					  
+						//$counter=0;
+  						foreach ($resultSub as $oneRec)
+  						{
+ 							echo"<option value=".$oneRec["subcategoryID"].">".$oneRec["subcategoryName"]."</option>";  			
+  						}
+  					  
+  					  echo "</select>";
+			      
+			      }
+			      <input type="submit" value= "select option"/>
+                      </form>
+			      
                       
                           
                   </div>
