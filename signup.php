@@ -11,10 +11,10 @@ $conn= new PDO("mysql:host=$host;dbname=$dbname",$user, $pass);
 
 //Diferent names for load the pages
 
-if (isset($_GET['lang'])&& isset($_GET['catidv']))
+if (isset($_POST['lang'])&& isset($_POST['catidv']))
 {
-	$lang =$_GET['lang'];
-	$langid=$_GET['catidv'];
+	$lang =$_POST['lang'];
+	$langid=$_POST['catidv'];
 }
 else 
 {
@@ -68,19 +68,19 @@ else
 }
 
 
-if (isset($_GET['name'])&&isset($_GET['address'])&&isset($_GET['city'])&&
-		isset($_GET['state'])&&isset($_GET['phone'])&&isset($_GET['phone'])&&
-		isset($_GET['email'])&&isset($_GET['password']))
+if (isset($_POST['name'])&&isset($_POST['address'])&&isset($_POST['city'])&&
+		isset($_POST['state'])&&isset($_POST['phone'])&&isset($_POST['phone'])&&
+		isset($_POST['email'])&&isset($_POST['password']))
 {
 	echo "register";
-	//membertype $mtype =$_GET['membertype'];
-	$name=$_GET['name'];
-	$address=$_GET['address'];
-	$city=$_GET['city'];
-	$state=$_GET['state'];
-	$phone=$_GET['phone'];
-	$email=$_GET['email'];
-	$password=$_GET['password'];
+	//membertype $mtype =$_POST['membertype'];
+	$name=$_POST['name'];
+	$address=$_POST['address'];
+	$city=$_POST['city'];
+	$state=$_POST['state'];
+	$phone=$_POST['phone'];
+	$email=$_POST['email'];
+	$password=$_POST['password'];
 
 
 	$tclient = new Client(null, "$name", "$address", 2, "$city", "$state", "$phone","$email", "$password");
@@ -133,7 +133,7 @@ if (isset($_GET['name'])&&isset($_GET['address'])&&isset($_GET['city'])&&
               <h3>
                 Register
               </h3>
-              <form role="form" class="login-form" action="#" method="get">
+              <form role="form" class="login-form" action="#" method="post">
                   <div class="form-group">
                   <div class="input-icon">
                    
@@ -197,11 +197,7 @@ if (isset($_GET['name'])&&isset($_GET['address'])&&isset($_GET['city'])&&
         </div>
       </div>
     </section>
-    <!-- Content section End --> 
-
-    
-
-      
+    <!-- Content section End -->      
   
     
   </body>
