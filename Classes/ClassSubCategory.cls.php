@@ -23,6 +23,23 @@ class SubCategory{
 		$this-> subCatName=$subCatName;
 		$this-> categoryID=$categoryID;
 	}
+	
+	function getSubcatByCatid($conn, $catid)
+	{
+		$sqlCmd="SELECT subcategories.subCatID,subcategories.subCatName, categories.categoryID
+	             FROM subcategories
+	             JOIN categories
+	             ON subcategories.categoryID=categories.categoryID
+	             WHERE categories.categoryID=:catid";
+		
+		$prepQuery = $conn ->prepare($sqlCmd);
+		$prepQuery->bindParam(":catid",$catid, PDO::PARAM_INT);
+		$prepQuery->execute();
+		$resultSubCat= $prepQuery->fetchAll();
+		
+		return $resultSubCat;
+		
+	}
 }
 
 ?>
