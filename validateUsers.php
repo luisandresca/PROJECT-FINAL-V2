@@ -13,10 +13,10 @@ $conn= new PDO("mysql:host=$host;dbname=$dbname",$user, $pass);
 
 
 
-if (isset($_GET['email'])&& isset($_GET['pass']))
+if (isset($_POST['email'])&& isset($_POST['pass']))
 {
-	$email = $_GET['email'];
-	$pass = $_GET['pass'];
+	$email = $_POST['email'];
+	$pass = $_POST['pass'];
 	
 	$sqlCmd ="SELECT * FROM `members`
 			  WHERE email=:emailp
