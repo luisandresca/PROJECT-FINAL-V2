@@ -57,7 +57,7 @@
               <h3>
                 Login
               </h3>
-              <form role="form" class="login-form" action='validateUsers.php' method="get">
+              <form role="form" class="login-form" action='validateUsers.php' method="post">
                 <div class="form-group">
                   <div class="input-icon">
                     <i class="icon fa fa-user"></i>
