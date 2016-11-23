@@ -80,8 +80,8 @@ $prepQuery->execute();
 $resultLang= $prepQuery->fetchAll();
 
 
-/*
- * --only subcategories
+
+//only subcategories
 SELECT subcategories.subCatID,subcategories.subCatName, categories.categoryID
 FROM subcategories
 JOIN categories
@@ -90,10 +90,27 @@ JOIN languages
 ON categories.languageID = languages.languageID
 WHERE languages.languageID =1
 AND categories.categoryID=1;
- */
-
 
 ?>
+
+<script>
+   $(document).ready(function() {
+   $('select[name="comboCategories"]').on("change", function() {
+        var selectVal = $('this').val();
+
+        $.ajax({                                      
+          url: 'postanAd.php',                         
+          data: "comboCategories="+selectVal,                                                     
+          type:'post',
+          success: function(data) { 
+              for (var i in data) {
+                 $('select[name="subcategories"]').append('<option value="">'+data+'</option>');
+               }
+          }
+        });
+    });
+   });
+</script>
 
 
 <!DOCTYPE html>
