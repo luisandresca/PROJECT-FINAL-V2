@@ -131,7 +131,7 @@ else
 
     <div class="wrapper">      
 
-      <!-- Featured Listings Start -->
+     <!-- Featured Listings Start -->
       <section class="featured-lis" >
         <div class="container">
           <div class="row">
@@ -142,10 +142,9 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img3.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
                       </div> 
                     </div>
-                    <a href="ads-details.html" class="item-name">Feugiat nulla facilisis</a>  
+                    <a class="item-name">Apple watch</a>  
                     <span class="price">$300</span>  
                   </div>
                 </div>
@@ -156,10 +155,10 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img4.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
+                       
                       </div> 
                     </div> 
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
+                    <a class="item-name">Samsung Galaxy S5</a>  
                     <span class="price">$149</span> 
                   </div>
                 </div>
@@ -170,11 +169,10 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img5.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
                       </div> 
                     </div>
-                    <a href="ads-details.html" class="item-name">Sed diam nonummy</a>  
-                    <span class="price">$90</span> 
+                    <a class="item-name">MacBook Pro</a>  
+                    <span class="price">$900</span> 
                   </div>
 
                 </div>
@@ -183,11 +181,10 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img6.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
                       </div> 
                     </div>                     
-                    <a href="ads-details.html" class="item-name">Praesent luptatum zzril</a>  
-                    <span class="price">$169</span> 
+                    <a class="item-name">Ipad</a>  
+                    <span class="price">$369</span> 
                   </div>
 
                 </div>
@@ -196,10 +193,9 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img7.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
                       </div> 
                     </div>  
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
+                    <a class="item-name">Blackberry </a>  
                     <span class="price">$79</span> 
                   </div>
                 </div>
@@ -208,11 +204,10 @@ else
                     <div class="carousel-thumb">
                       <img src="assets/img/product/img8.jpg" alt=""> 
                       <div class="overlay">
-                        <a href="ads-details.html"></a>
                       </div> 
                     </div>
-                    <a href="ads-details.html" class="item-name">Sed diam nonummy</a>  
-                    <span class="price">$149</span>   
+                    <a class="item-name">Google Nexus</a>  
+                    <span class="price">$749</span>   
                   </div>
                 </div>
               </div>
@@ -335,24 +330,24 @@ echo"</ul>";
                   <div class="item">
                   <div class="product-item">
                  
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
-                    <span class="price">$149</span> 
+                    <a class="item-name">Appartment to rent in Côte des Neiges</a>  
+                    <span class="price">$490 per month</span> 
                   </div>
                 </div>
 
                  <div class="item">
                   <div class="product-item">
                  
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
-                    <span class="price">$149</span> 
+                    <a class="item-name">Honda Civic 1995</a>  
+                    <span class="price">$1490</span> 
                   </div>
                 </div>
 
                <div class="item">
                   <div class="product-item">
                  
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
-                    <span class="price">$149</span> 
+                    <a class="item-name">Chalet to rent in Ste Adele</a>  
+                    <span class="price">$700 par semaine</span> 
                   </div>
                 </div>
 
@@ -360,8 +355,8 @@ echo"</ul>";
                  <div class="item">
                   <div class="product-item">
                  
-                    <a href="ads-details.html" class="item-name">Lorem ipsum dolor sit</a>  
-                    <span class="price">$149</span> 
+                    <a class="item-name">Serveuse recherchée</a>  
+                    <span class="price">TBD</span> 
                   </div>
                 </div>
 
