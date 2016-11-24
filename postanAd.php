@@ -97,20 +97,21 @@ AND categories.categoryID=1;
    $(document).ready(function() {
    $('select[name="comboCategories"]').on("change", function() {
         var selectVal = $('this').val();
-
         $.ajax({                                      
           url: 'postanAd.php',                         
           data: "comboCategories="+selectVal,                                                     
           type:'post',
+                      
           success: function(data) { 
               for (var i in data) {
-                 $('select[name="subcategories"]').append('<option value="">'+data+'</option>');
+                 $('select[name="subcategories"]').append('<option value="">'+data[i]+'</option>');
                }
           }
         });
     });
    });
 </script>
+
 
 
 <!DOCTYPE html>
