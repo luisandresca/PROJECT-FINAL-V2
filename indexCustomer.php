@@ -232,7 +232,8 @@ else
           <div class="row">
               <h3 class="section-title">MY ADS</h3>
                         
-                  <!-- IN PHP TABLE -->             
+                 $tClient = new Client();
+		$tClient->displayAllAdds($conn,2);            
 
 
               </div>
