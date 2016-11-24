@@ -59,9 +59,11 @@
     
         <div class="container">
           <div class="row">
-              <h3 class="section-title">ALL MEMBERS</h3>
+              <h3 class="section-title">ALL CLIENTS</h3>
                         
-                  <!-- IN PHP TABLE -->             
+                  $templ = new Employee();
+$arr = $templ->listAllClients($conn);
+$templ->displayClients($conn, $arr, 'all');             
 
 
               </div>
